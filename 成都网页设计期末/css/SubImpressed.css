@@ -1,0 +1,187 @@
+::-webkit-scrollbar {
+    width: 12px;
+    height: 16px;
+    /* background-color: #F5F5F5; */
+}
+
+/*定义滚动条轨道
+
+内阴影+圆角*/
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #497271;
+}
+
+/*定义滑块
+
+内阴影+圆角*/
+
+::-webkit-scrollbar-thumb {
+    height: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #6aa7a6;
+}
+
+body {
+    background-color: #497271;
+
+}
+
+/* 返回顶部 */
+.totop {
+    z-index: 0;
+    position: fixed;
+    top: 600px;
+    right: 120px;
+    height: 70px;
+    width: 70px;
+    border-radius: 5px;
+    border: 2px solid green;
+    background-color: #69a09f;
+    text-align: center;
+    line-height: 70px;
+    transition: all 0.3s;
+}
+
+.totop span {
+    font-size: 35px;
+    color: green;
+    transition: all 0.3s;
+}
+
+.totop:hover span {
+    color: #fff;
+}
+
+.totop:hover {
+    background-color: green;
+    border: 2px solid rgba(172, 255, 47, 0.526);
+
+}
+
+.totop a {
+    display: block;
+}
+
+
+/* 返回上一页 */
+/* 整体样式 */
+.prev {
+    position: fixed;
+    top: 150px;
+    left: 170px;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    border: 2px solid green;
+    background-color: #69a09f;
+    text-align: center;
+    line-height: 60px;
+    transition: all 0.3s;
+}
+
+/* 样式 */
+.prev span {
+    font-size: 35px;
+    font-weight: bold;
+    color: green;
+    transition: all 0.3s;
+}
+
+/* 悬浮效果 */
+.prev:hover span {
+    color: #fff;
+    /* background-color: green; */
+}
+
+.prev:hover {
+    background-color: green;
+    border: 2px solid rgba(172, 255, 47, 0.526);
+}
+
+/* 链接隐藏 */
+.prev a {
+    position: absolute;
+    display: block;
+    height: 60px;
+    width: 60px;
+    font-size: 0;
+}
+
+/* 内容盒子 */
+.main {
+    /* height: 1000px; */
+    width: 990px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 120px;
+    border-radius: 15px;
+    background-color: #69a09faa;
+    border: 2px solid rgba(172, 255, 47, 0.526);
+}
+
+/* 大标题 */
+.main h1 {
+    text-align:
+        center;
+    padding: 5px 0px;
+    border-bottom: 1px solid green;
+}
+
+/* 内容盒子 */
+.main .content {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 40px;
+    text-indent: 24px;
+}
+
+/* 图片盒子 */
+.content .cn_imges {
+    text-align: center;
+    margin: 10px;
+
+    overflow: hidden;
+}
+
+/* 图片阴影 */
+.content .cn_imges img {
+    border-radius: 15px;
+    box-shadow: 2px 1px 7px 1px #000;
+    max-width: 800px;
+}
+
+/* 小标题 */
+.content .subtitle {
+    font-weight: bold;
+}
+
+.main .mfooter {
+    height: 40px;
+    /* width: 800px; */
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #88c3c1;
+    border: 2px solid #497271;
+    text-align: center;
+    font-size: 12px;
+}
+
+.main .mfooter a {
+
+    color: greenyellow;
+
+}
+
+.main .mfooter a:hover {
+    color: rgb(8, 255, 8);
+}
+
+/* mfooter */
+/* subtitle */
+
+/* cn_imges */
+/* 内容尾巴 */

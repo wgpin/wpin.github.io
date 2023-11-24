@@ -1,0 +1,322 @@
+* {
+    /* border: 1px solid red; */
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 16px;
+    /* background-color: #F5F5F5; */
+}
+
+/*定义滚动条轨道
+
+内阴影+圆角*/
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #497271;
+}
+
+/*定义滑块
+
+内阴影+圆角*/
+
+::-webkit-scrollbar-thumb {
+    height: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #6aa7a6;
+}
+
+body {
+    background-image: url(../images/background.jpeg);
+    /* background-col; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: '微软雅黑';
+    /* filter: blur(1px); */
+}
+
+
+
+body {
+    background-color: #000;
+}
+
+/* 头部模块----------------------------------------------------------------------------------------------- */
+.header {
+    height: 95px;
+    /* background-color: aquamarine; */
+}
+
+
+
+/* 主内容区----------------------------------------------------------------------------------------------- */
+.tile_axis {
+    /* 利用盒子整体宽度对齐中心线 */
+    width: 796px;
+    height: auto;
+    margin: 50px auto;
+    /* border: 1px solid red; */
+}
+
+/* 左盒子样式 */
+.tile_axis .left {
+    position: relative;
+    /* 高度自适应 */
+    /* height: 300px; */
+    /* 宽度要是整体的一半，为了平分整个盒子 */
+    width: 400px;
+    /* background-color: skyblue; */
+    float: left;
+    /* 在左边 */
+    /* 中心线 */
+    /* 边框会自动将两个盒子错开 */
+    border-right: 4px solid green;
+    /* margin-top:20px; */
+}
+
+/* 右盒子样式 */
+.tile_axis .right {
+    position: relative;
+    /* 高度自适应 */
+    /* height: 300px; */
+    /* 宽度要是整体的一半，为了平分整个盒子 */
+    width: 400px;
+    /* background-color: sienna; */
+    /* 在右边 */
+    float: right;
+    /* 中心线 */
+    border-left: 4px solid green;
+}
+
+/* 小圆点样式 start*/
+/* 共同样式 */
+.tile_axis .dot {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 2px solid #b1bbf9;
+    /* <!-- 用子绝父相来移动位置 --> */
+    position: absolute;
+    /* 始终居中 */
+    top: 50%;
+    margin-top: 9px;
+}
+
+/* 左盒子样式 */
+.tile_axis .left .dot {
+    right: -7px;
+
+}
+
+/* 右盒子样式 */
+/* 共用左盒子的样式并且单独调整 */
+.tile_axis .right .dot {
+    /* 只有这个样式和左盒子不一样 */
+    left: -7px;
+}
+
+/* 小圆点样式 end*/
+
+/* 三角箭头样式 start*/
+.tile_axis .arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    display: block;
+    height: 0px;
+    width: 0px;
+    /*2.样式都是solid*/
+    border-style: solid;
+    /*3.上边框宽度要大，右边框宽度稍小，其余的边框为0*/
+    border-width: 29px 27px 0 0;
+}
+
+/* 左盒子箭头 */
+.tile_axis .left .arrow {
+    right: 8px;
+    /*顺序：上 右 下 左*/
+    border-color: transparent #497271 transparent transparent;
+    transform: rotate(-42deg);
+}
+
+/* 右盒子箭头 */
+.tile_axis .right .arrow {
+    margin-top: 1px;
+    left: 8px;
+    border-color: transparent #497271 transparent transparent;
+    transform: rotate(-222deg);
+}
+
+/* 三角箭头样式 end*/
+
+/* 内容盒子 start*/
+/* 整体盒子高度自适应 */
+.tile_axis .time_content {
+    position: relative;
+    padding: 20px;
+    height: 400px;
+    width: 95%;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 2px solid #4ac9c7;
+    background-color: #49727192;
+    transition: all 0.6s;
+}
+
+.tile_axis .time_content {
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+/* 右盒子 */
+.tile_axis .right .time_content {
+    margin-left: 5%;
+}
+
+/* 内容盒子 end*/
+/* 年份盒子 start*/
+/* 年份盒子共同样式 */
+.tile_axis .timeToYear {
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    height: 45px;
+    line-height: 45px;
+    /* width: 70px; */
+    padding: 0px 15px;
+    background-color: #497271;
+    border-radius: 15px;
+    transition: all 0.5s;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid green;
+    font-weight: 700;
+}
+
+.tile_axis .timeToYear:hover {
+    background-color: #fff;
+    color: green;
+}
+
+/* 左盒子年份及说明 */
+.tile_axis .left .timeToYear {
+    right: -100px;
+}
+
+/* 右盒子年份及说明 */
+.tile_axis .right .timeToYear {
+    left: -100px;
+}
+
+/* 年份盒子 end*/
+.time_content:hover {
+    /* height: auto; */
+    /* height: 100vh; */
+    width: 800px;
+    background-color: #497271;
+    overflow-y: scroll;
+}
+
+
+
+.right .time_content:hover {
+    border-radius: 20px 0px 0px 20px;
+    margin-left: -400px;
+}
+
+
+
+
+
+/* 介绍卡片 */
+/* introduce */
+.content_introduce {
+    margin-top: -20px;
+    margin-left: -20px;
+    border-radius: 20px;
+    height: 400px;
+    width: 370px;
+    /* background-color: pink; */
+    padding: 15px;
+    float: left;
+    /* border: 1px solid red; */
+}
+
+.content_introduce p {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.content_introduce img {
+    position: absolute;
+    top: 160px;
+    left: 35px;
+    border-radius: 15px;
+    height: 200px;
+    width: 300px;
+    box-shadow: 0px 0px 18px 5px rgb(138, 138, 138);
+    border: 2px solid green;
+
+    /* width: 400px; */
+}
+
+/* 标题 */
+.contitle {
+    font-size: 30px;
+    padding: 5px;
+    border: 1px solid #fff;
+    background-color: #1d313179;
+}
+
+.article {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: auto;
+    width: 400px;
+    /* border: 1px solid red; */
+    float: left;
+    margin: 10px;
+    text-align: left;
+    text-indent: 2em;
+    border-left: 1px solid rgb(149, 147, 147);
+    padding: 15px;
+    transition: all 1s;
+}
+
+.article p {
+    margin-top: 5px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.article img {
+    height: 250px;
+    width: 300px;
+    box-shadow: 0px 0px 18px 5px rgb(138, 138, 138);
+    border: 2px solid green;
+}
+
+.time_content:hover .article {
+    display: block;
+}
+
+/* 加重 */
+.kaynote {
+    color: greenyellow;
+}
+
+.kaynote:hover {
+    font-weight: bold;
+    color: greenyellow;
+}

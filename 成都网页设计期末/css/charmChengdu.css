@@ -1,0 +1,482 @@
+* {
+    /* border: 1px solid red; */
+}
+
+
+
+body {
+    background-color: #000;
+    font-family: '微软雅黑';
+}
+
+
+
+/*卡片*/
+
+.block-content {
+    position: relative;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+}
+
+.info-content {
+    background-color: #497271;
+    margin: 25vh 15vh;
+    /*display: none*/
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    weight: 1000px;
+}
+
+.block-content p {
+    margin: 25px 25px 25px 25px;
+}
+
+.text_communist {
+    color: white;
+    font-size: 40px;
+    margin-top: -20px;
+    position: relative;
+    top: -5px;
+    z-index: 99;
+}
+
+.text_content {
+    color: #ccc;
+    font-size: 5px;
+    line-height: 2;
+    z-index: 99;
+}
+
+p.line {
+    background-color: white;
+    height: 3px;
+    margin: 0 25px;
+    position: relative;
+    top: -5%;
+    width: 53%;
+}
+
+img.info-photo {
+    /*  width: ;*/
+    /* height: 90vh;*/
+    margin-left: 840px;
+    margin-top: 160px;
+    position: absolute;
+    z-index: 6;
+}
+
+.block-content {
+    position: relative;
+    height: 580px;
+    background-color: #000;
+}
+
+.info-content {
+    background-color: #497271;
+    margin: 30vh 15vh;
+    /*display: none*/
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+}
+
+/* 背景横幅 */
+.banner {
+    position: relative;
+    height: 800px;
+    /* background-color: pink; */
+    /* background-image: url(../images/banner.jpeg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100% 100%; */
+    /* background-color: pink; */
+    font-family: 微软雅黑;
+    color: #FFF;
+    /* font-weight: 700; */
+
+}
+
+.video_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 100%;
+    z-index: -1;
+}
+
+.video_container video {
+    z-index: 0;
+    min-height: 100%;
+    min-width: 100%;
+    margin-top: -189px;
+}
+
+.banner_ct {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 140px;
+}
+
+/* 大标题 */
+.banner_ct .title {
+    font-size: 100px;
+    /* font-weight: bold; */
+    color: #fff;
+    margin: 0px 0px 0px 140px;
+    text-shadow: 4px 6px 6px #000;
+}
+
+/* 介绍内容 */
+.banner_ct .ct_ln {
+    margin: 20px 0px 0px 140px;
+    /* height: 100px; */
+    /* width: 200px; */
+    /* border-radius: 20px; */
+    /* background-color: #497271; */
+}
+
+/* 介绍文字 */
+.banner_ct .ct_ln p {
+    text-shadow: 4px 6px 6px #000;
+    /* 字符间距 */
+    Letter-spacing: 5px;
+    height: 40px;
+    width: auto;
+    padding: 0px 10px;
+    border-radius: 15px;
+    /* background-color: #ffffff; */
+    font-size: 23px;
+    line-height: 40px;
+    transition: 0.5s;
+
+}
+
+/* 悬浮效果 */
+.banner_ct .ct_ln p:hover {
+    background-color: #497271cb;
+}
+
+/* ----- */
+.block-content {
+    position: relative;
+    height: 200px;
+    background-color: #000;
+}
+
+.info-content {
+    background-color: #497271;
+    margin: 25vh 15vh;
+    /*display: none*/
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    weight: 1000px;
+    transition: 0.5s;
+}
+
+.info-content:hover {
+    border: 1px solid white;
+}
+
+.block-content p {
+    margin: 25px 25px 25px 25px;
+}
+
+.text_communist {
+    color: white;
+    font-size: 40px;
+    margin-top: -20px;
+    position: relative;
+    top: -5px;
+    z-index: 99;
+}
+
+.text_content {
+    color: #ccc;
+    font-size: 5px;
+    line-height: 2;
+    z-index: 99;
+}
+
+p.line {
+    background-color: white;
+    height: 3px;
+    margin: 0 25px;
+    position: relative;
+    top: -5%;
+    width: 53%;
+}
+
+img.info-photo {
+    margin-left: 890px;
+    margin-top: 140px;
+    position: absolute;
+    z-index: 6;
+}
+
+.info-imag img {
+    height: 235px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.info-imag img:hover {
+    height: 255px;
+
+}
+
+.block-content {
+    position: relative;
+    height: 580px;
+    background-color: rgb(0, 0, 0);
+}
+
+.info-content {
+    background-color: #497271;
+    margin: 30vh 15vh;
+    /*display: none*/
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    border-radius: 15px;
+}
+
+/* 响应式卡片 */
+.container {
+    margin-top: 0px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.5s;
+    height: 600px;
+    /*height:1100px;*/
+}
+
+.container .card {
+    position: relative;
+    width: 470px;
+    height: 500px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    margin: 60px 35px 60px 35px;
+}
+
+p.line_c {
+    background-color: white;
+    height: 3px;
+    margin: 0 25px;
+    position: relative;
+    top: -5%;
+    width: 90%;
+}
+
+.container:hover .card {
+    filter: blur(5px);
+    transform: scale(.7);
+}
+
+.container .card:hover {
+    filter: blur(0px);
+    transform: scale(1);
+}
+
+.container .card:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #497271;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container .card:hover:before {
+    background: #FFF;
+    transform: scale(1.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+}
+
+.container .card .content {
+    text-align: center;
+    z-index: 2;
+    padding: 0 20px;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    color: #497271;
+}
+
+.container .card .text_communist_c {
+    display: inline-block;
+    color: white;
+    font-size: 40px;
+    margin-top: -20px;
+    position: relative;
+    top: -5px;
+    z-index: 99;
+}
+
+.container .card:hover .text_communist_c {
+    color: #000;
+}
+
+.container .card .text_content_c {
+    display: inline-block;
+    color: #FFF;
+    font-size: 5px;
+    line-height: 2;
+    z-index: 99;
+}
+
+.container .card:hover .text_content_c {
+    color: #000;
+}
+
+.text_communist_c {
+    color: white;
+    font-size: 40px;
+    margin-top: -20px;
+    margin-left: 5px;
+    position: relative;
+    top: -5px;
+    z-index: 99;
+}
+
+.text_content_c {
+    color: #FFF;
+    font-size: 5px;
+    line-height: 2;
+    z-index: 99;
+}
+
+/* class7.6 */
+.beautiful {
+    height: 250px;
+
+}
+
+.beautiful-ct {
+    transition: all 0.5s;
+    height: 270px;
+    width: 1400px;
+    margin: 0 auto;
+    /* padding: 10px; */
+    border-radius:
+        15px;
+    border: 2px solid #497271;
+    /* background-color: pink; */
+    margin-bottom: 10px;
+}
+
+.beautiful-ct-hd {
+    position: relative;
+    color: #fff;
+    font-size: 25px;
+}
+
+/* 大标题 */
+.beautiful-ct-hd h3 {
+    position: relative;
+    top: 15px;
+    left: 20px;
+
+}
+
+.beautiful-ct-bd {
+    position: relative;
+    height: 200px;
+    width: 1300;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* background-color: skyblue; */
+    color: #fff
+}
+
+.beautiful-ct-bd li {
+    position: relative;
+    height: 200px;
+    width: 220px;
+    float: left;
+    background-color: #4972715c;
+    margin-left: 10px;
+    border: 1px solid #497271;
+    border-radius: 15px;
+}
+
+.beautiful-ct-bd li a {
+    display: inline-block;
+    height: 23px;
+    padding: 0px 10px;
+    /* background-color: #497271; */
+    border-radius: 10px;
+    border: 1px solid green;
+    margin: 0 auto;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 5px 0px 0px 67px;
+    transition: 0.5s;
+
+}
+
+.beautiful-ct-bd li a:hover {
+    background-color: #fff;
+    color: green;
+}
+
+.beautiful-ct-bd img {
+    height: 153px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.beautiful-ct-bd .beautiful_img {
+    height: 153px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: skyblue;
+    margin: 12px 0px 0px 10px;
+}
+
+.beautiful-ct-bd .beautiful_img .beautiful_img_info {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.659);
+    height: 153px;
+    width: 200px;
+    transition: 0.5s;
+    display: none;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    padding: 15px 15px;
+}
+
+.beautiful-ct-bd .beautiful_img:hover .beautiful_img_info {
+    display: block;
+}
+
+
+
+/* beautiful_img_info */
+
+body {
+    font-family: '微软雅黑';
+}
+
+@media (max-width: 800px) {
+    .beautiful {
+        margin-top: 500px;
+    }
+}
